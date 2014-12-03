@@ -22,9 +22,9 @@ public class LibraryViewer {
         try {
             Log.init();
             System.out.println("Library viewer");
-            org.apache.log4j.BasicConfigurator.configure();
-            File input = new File("/1/libary/");
-            File output = new File("/1/libary/");
+
+            File input = new File("/home/temp/library/data");
+            File output = new File("/home/temp/library/index");
             Log.logger.info("Starting Library Viewer");
 
             new LibraryViewer().scan(input, output);

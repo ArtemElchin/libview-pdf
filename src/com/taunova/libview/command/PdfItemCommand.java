@@ -10,9 +10,7 @@ package com.taunova.app.libview.command;
 import com.taunova.app.libview.FileRenderer;
 import com.taunova.app.libview.Item;
 import com.taunova.app.libview.ItemCommand;
-import com.taunova.app.libview.ItemProcessingException;
 import java.io.File;
-import java.util.Map;
 
 /**
  *
@@ -39,11 +37,6 @@ public class PdfItemCommand implements ItemCommand {
 //                ImageHelpers.storeImage(pdfBookRenderer.getFileIndex(), bookFile);
 //                templateEngine.createHTMLPreview(bookFile);
         return null;
-    }
-
-    @Override
-    public Item process(File item, Map context, Map properties) throws ItemProcessingException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }

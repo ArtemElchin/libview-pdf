@@ -13,7 +13,7 @@ import java.util.Map;
  *
  * @author Artem
  */
-public interface Item {
+interface Item {
 
     boolean isFile();
 
