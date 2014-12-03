@@ -1,0 +1,19 @@
+<ivy-module version="2.0">
+    <info organisation="net.taunova" module="libview-pdf" status="integration"/>
+   <configurations>
+      <conf name="compile"/>
+      <conf name="runtime"/>
+      <conf name="standalone" extends="runtime"/>
+    </configurations>
+    <publications>
+      <artifact name="libview-pdf" type="jar" conf="runtime"/>
+    </publications>
+    <dependencies>
+	<dependency org="commons-io" name="commons-io" rev="2.4"/>
+	<dependency org="log4j" name="log4j" rev="1.2.17"/>
+
+	<dependency org="org.apache.velocity" name="velocity" rev="1.7"/>
+	<dependency org="com.mortennobel" name="java-image-scaling" rev="0.8.5"/>
+	<dependency org="com.kenai.nbpwr" name="com-sun-pdfview" rev="1.0.5-201003191900"/>
+    </dependencies>
+</ivy-module>

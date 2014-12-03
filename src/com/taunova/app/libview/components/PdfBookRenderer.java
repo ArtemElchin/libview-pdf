@@ -74,7 +74,7 @@ class PdfBookRenderer extends AbstractFileRenderer {
             }
 
             titleImage = images.get(0);
-            indexImage = shelfRenderer.drawContent(images, names).image;
+         //   indexImage = shelfRenderer.drawContent(images, names).image;
         } catch (Exception e) {
             e.printStackTrace();
         }

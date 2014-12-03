@@ -70,7 +70,7 @@ class IcePdfBookRenderer extends AbstractFileRenderer {
         }
         // clean up resources
         document.dispose();
-        indexImage = shelfRenderer.drawContent(images, names).image;
+      //  indexImage = shelfRenderer.drawContent(images, names).image;
 
     }
 }
