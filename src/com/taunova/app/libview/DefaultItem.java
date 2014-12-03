@@ -29,9 +29,9 @@ public class DefaultItem implements Item {
         this.thubnailImage = tubnailImage;
     }
 
-    public DefaultItem(String name, Image thubnail, String thubnailImage, String previewImage) {
+    public DefaultItem(String name,  String thubnailImage, String previewImage) {
         this.name = name;
-        this.thubnail = thubnail;
+       // this.thubnail = thubnail;
         this.thubnailImage = thubnailImage;
         this.previewImage = previewImage;
     }

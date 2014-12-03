@@ -9,7 +9,9 @@ package com.taunova.app.libview.command;
 
 import com.taunova.app.libview.Item;
 import com.taunova.app.libview.ItemCommand;
+import com.taunova.app.libview.ItemProcessingException;
 import java.io.File;
+import java.util.Map;
 
 /**
  *
@@ -24,6 +26,11 @@ public class DjvuItemCommand implements ItemCommand {
     public Item process(File item) {
         //image = addDJVUBook(book);
         return null;
+    }
+
+    @Override
+    public Item process(File item, Map context, Map properties) throws ItemProcessingException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
